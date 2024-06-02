@@ -2,11 +2,15 @@
 This is a temporary repository for NeurIPS submission number 14488.
 It mainly includes ORI with MPM (*Neural Relational Inference with Efficient Message Passing Mechanisms* accepted by AAAI 2021. [arXiv](https://arxiv.org/pdf/2101.09486))
 
-## Requirements
-- Ubuntu 16.04
-- python 3.6
-- pytorch >= 1.2.0
-- numpy >= 1.14.5
-- scipy >= 1.1.0
-- torch-geometric >= 1.3.2
-- CUDA 10.0
+## Setup Environment
+conda create -n ori python=3.8
+conda activate ori
+pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torchdiffeq==0.2.3
+pip install torch_geometric==2.5.0
+pip install torch-cluster==1.5.9 -f https://data.pyg.org/whl/torch-1.9.1+cu111.html
+pip install torch-scatter==2.0.9 -f https://data.pyg.org/whl/torch-1.9.1+cu111.html
+pip install torch-sparse==0.6.10 -f https://data.pyg.org/whl/torch-1.9.1+cu111.html
+pip install tqdm==4.66.2
+pip install matplotlib==3.0.3
+pip install scikit-learn==1.3.2
