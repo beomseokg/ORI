@@ -1,7 +1,7 @@
 ## Online Relational Inference for Evolving Multi-agent Interacting Systems ##
 ![Example Image](figure_model.png)
 
-This is a temporary anonymous repository for NeurIPS submission number 14488. It mainly includes ORI with NRIr decoder and ORI with MPMr decoder. Please check the references in Acknowledgements.
+This is a temporary anonymous repository for NeurIPS submission number 14488. It mainly includes ORI with NRIr decoder and ORI with MPMr decoder for now. Additional experimental details such as prior offline methods will be provided soon.
 
 ## Setup Environment
 ```bash
@@ -17,7 +17,6 @@ pip install tqdm==4.66.2
 pip install matplotlib==3.0.3
 pip install scikit-learn==1.3.2
 ```
-
 
 ## Setup Datasets
 
@@ -35,7 +34,12 @@ python generate_dataset.py --simulation springs --mode parameter
 python generate_dataset.py --simulation springs --mode parameter
 ```
 
-To generate evolving interaction + dynamics datasets (fixed parameter and switching dynamics), evolving interaction datasets should be prepared first.
+To generate evolving interaction + dynamics datasets (fixed parameter and switching dynamics), evolving interaction datasets should be prepared first. If they are ready:
+```bash
+python generate_evolving_dynamics.py
+```
+
+
 
 ## Run Experiments
 Please check ```os.environ["CUDA_VISIBLE_DEVICES"]``` in NRI/train.py and NRI-MPM/run.py to select device to run experiments.
@@ -61,8 +65,6 @@ python train.py --dyn springs_var # evolving interaction + parameter
 python train.py --dyn charged_var # evolving interaction + parameter
 python train.py --dyn mixed # evolving interaction + dynamics
 ```
-
-Additional experimental details such as prior offline methods will be updated in the final version.
 
 ## Acknowledgements
 This project is based on the following open-source projects. We thank their authors for making the source code publically available.
