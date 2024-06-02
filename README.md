@@ -1,5 +1,5 @@
 ## Online Relational Inference for Evolving Multi-agent Interacting Systems ##
-![Example Image](figure_model.pdf)
+![Example Image](figure_model.png)
 
 This is a temporary anonymous repository for NeurIPS submission number 14488. It mainly includes ORI with NRIr decoder and ORI with MPMr decoder. Please check the references in Acknowledgements.
 
