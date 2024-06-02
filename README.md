@@ -60,3 +60,10 @@ python train.py --dyn springs_var # evolving interaction + parameter
 python train.py --dyn charged_var # evolving interaction + parameter
 python train.py --dyn mixed # evolving interaction + dynamics
 ```
+
+
+## Acknowledgements
+
+ - [NRI](https://github.com/ethanfetaya/NRI/tree/master)
+ - [MPM](https://github.com/hilbert9221/NRI-MPM)
+
