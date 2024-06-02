@@ -25,13 +25,13 @@ Data generation is primarily done by data/generate_dataset.py. Note, current npy
 To generate evolving interaction datasets (fixed parameter and no switching dynamics):
 ```bash
 python generate_dataset.py --simulation springs --mode interaction
-python generate_dataset.py --simulation springs --mode interaction
+python generate_dataset.py --simulation charged --mode interaction
 ```
 
 To generate evolving interaction + parameter datasets (variable parameter and no switching dynamics):
 ```bash
 python generate_dataset.py --simulation springs --mode parameter
-python generate_dataset.py --simulation springs --mode parameter
+python generate_dataset.py --simulation charged --mode parameter
 ```
 
 To generate evolving interaction + dynamics datasets (fixed parameter and switching dynamics), evolving interaction datasets should be prepared first. If they are ready:
