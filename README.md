@@ -1,8 +1,7 @@
 ## Online Relational Inference for Evolving Multi-agent Interacting Systems ##
 ![Example Image](figure_model.pdf)
 
-This is a temporary repository for NeurIPS submission number 14488.
-It mainly includes ORI with MPM (*Neural Relational Inference with Efficient Message Passing Mechanisms* accepted by AAAI 2021. [arXiv](https://arxiv.org/pdf/2101.09486))
+This is a temporary anonymous repository for NeurIPS submission number 14488. It mainly includes ORI with NRIr decoder and ORI with MPMr decoder. Please check the references in Acknowledgements.
 
 ## Setup Environment
 ```bash
@@ -22,7 +21,7 @@ pip install scikit-learn==1.3.2
 
 ## Setup Datasets
 
-Data generation is primarily done by generate_dataset.py in /data.
+Data generation is primarily done by generate_dataset.py in /data. Note, current npy files in the directory are just examples to show name format, not actual training data.
 
 To generate evolving interaction datasets (fixed parameter and no switching dynamics):
 ```bash
@@ -63,6 +62,7 @@ python train.py --dyn charged_var # evolving interaction + parameter
 python train.py --dyn mixed # evolving interaction + dynamics
 ```
 
+Additional experimental details such as prior offline methods will be updated in the final version.
 
 ## Acknowledgements
 This project is based on the following open-source projects. We thank their authors for making the source code publically available.
