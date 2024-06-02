@@ -20,7 +20,7 @@ pip install scikit-learn==1.3.2
 
 ## Setup Datasets
 
-Data generation is primarily done by generate_dataset.py in /data. Note, current npy files in the directory are just examples to show name format, not actual training data.
+Data generation is primarily done by data/generate_dataset.py. Note, current npy files in data/evolving... are just examples to show name format, not actual training data.
 
 To generate evolving interaction datasets (fixed parameter and no switching dynamics):
 ```bash
@@ -46,16 +46,6 @@ Please check ```os.environ["CUDA_VISIBLE_DEVICES"]``` in NRI/train.py and NRI-MP
 
 Current args are set to enable Trajectory Mirror and AdaRelation by default. Ablation studies can be perfomed by turning off these arguments.
 
-For MPM,
-```bash
-cd NRI-MPM
-python run.py --dyn springs # evolving interaction
-python run.py --dyn charged # evolving interaction
-python run.py --dyn springs_var # evolving interaction + parameter
-python run.py --dyn charged_var # evolving interaction + parameter
-python run.py --dyn mixed # evolving interaction + dynamics
-```
-
 For NRI,
 ```bash
 cd NRI
@@ -64,6 +54,16 @@ python train.py --dyn charged # evolving interaction
 python train.py --dyn springs_var # evolving interaction + parameter
 python train.py --dyn charged_var # evolving interaction + parameter
 python train.py --dyn mixed # evolving interaction + dynamics
+```
+
+For MPM,
+```bash
+cd NRI-MPM
+python run.py --dyn springs # evolving interaction
+python run.py --dyn charged # evolving interaction
+python run.py --dyn springs_var # evolving interaction + parameter
+python run.py --dyn charged_var # evolving interaction + parameter
+python run.py --dyn mixed # evolving interaction + dynamics
 ```
 
 ## Acknowledgements
