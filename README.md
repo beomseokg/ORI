@@ -49,11 +49,11 @@ Current args are set to enable Trajectory Mirror and AdaRelation by default. Abl
 For NRI,
 ```bash
 cd NRI
-python train.py --dyn springs # evolving interaction
-python train.py --dyn charged # evolving interaction
-python train.py --dyn springs_var # evolving interaction + parameter
-python train.py --dyn charged_var # evolving interaction + parameter
-python train.py --dyn mixed # evolving interaction + dynamics
+python train.py --suffix _springs # evolving interaction
+python train.py --suffix _charged # evolving interaction
+python train.py --suffix _springs_var # evolving interaction + parameter
+python train.py --suffix _charged_var # evolving interaction + parameter
+python train.py --suffix _mixed # evolving interaction + dynamics
 ```
 
 For MPM,
