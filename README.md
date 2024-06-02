@@ -1,4 +1,6 @@
 ## Online Relational Inference for Evolving Multi-agent Interacting Systems ##
+![Example Image](figure_model.pdf)
+
 This is a temporary repository for NeurIPS submission number 14488.
 It mainly includes ORI with MPM (*Neural Relational Inference with Efficient Message Passing Mechanisms* accepted by AAAI 2021. [arXiv](https://arxiv.org/pdf/2101.09486))
 
