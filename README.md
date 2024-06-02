@@ -63,6 +63,7 @@ python train.py --dyn mixed # evolving interaction + dynamics
 
 
 ## Acknowledgements
+This project is based on the following open-source projects. We thank their authors for making the source code publically available.
 
  - [NRI](https://github.com/ethanfetaya/NRI/tree/master)
  - [MPM](https://github.com/hilbert9221/NRI-MPM)
