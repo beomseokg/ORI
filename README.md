@@ -1,7 +1,7 @@
 ## Online Relational Inference (ORI) for Evolving Multi-agent Interacting Systems ##
 ![Example Image](figure_model.png)
 
-This is a temporary anonymous repository for **2024 NeurIPS submission #14488**. *To the best of our knowledge, this is the first open-source framework on online learning of multi-agent relational inference*. It mainly includes ORI with NRIr decoder and ORI with MPMr decoder for now. Additional experimental details such as prior offline methods will be provided soon.
+This is an official implementation of ORI published at NeurIPS 2024. To the best of our knowledge, this is the first open-source framework on online learning of multi-agent relational inference. It mainly includes ORI with NRIr decoder and ORI with MPMr decoder for now. Additional experimental details such as prior offline methods will be provided soon.
 
 ## Setup Environment
 ```bash
